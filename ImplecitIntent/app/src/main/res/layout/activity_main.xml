@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:layout_height="match_parent"
+    tools:context="mt.com.vn.implecitintent.MainActivity">
+    <EditText
+        android:background="@android:color/white"
+        android:id="@+id/edtNumberPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="number phone"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:inputType="number"
+        android:textColor="@android:color/black">
+     <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="message"
+        android:textSize="24sp"
+        android:inputType="number"
+        android:textColor="@android:color/black">
+        <requestFocus/>
+    </EditText>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/chat"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/call"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgDialog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/chat"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
